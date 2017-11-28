@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, Times, serif;
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #333;
+  overflow-x: hidden;
+}
+
+video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#ytplayer {
+  min-height: 100vh;
+  /*min-width: 100vh;*/
+  width: 100%;
+}
+
+.v-header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.container {
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.fullscreen-video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fullscreen-video-wrap video {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.header-overlay {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1;
+  background: #22706c;
+  opacity: 0.85;
+}
+
+.header-content {
+  z-index: 2;
+}
+
+.header-content h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.header-content p {
+  font-size: 1.5rem;
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.btn {
+  background: #34b3a0;
+  /*color: #fff;*/
+  /*font-size: 1.2rem;
+  padding: 1rem 2rem;*/
+  font-family: 'Montserrat', sans-serif;
+  font-size: 135%;
+  font-weight: 600;
+  color: #3a6168;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: solid #3a6168;
+  padding: 10px 20px;
+  border-radius: 9px;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  color: #CBDFD6;
+  border: solid #CBDFD6 2px;
+}
+
+.section {
+  padding: 20px 0;
+}
+
+.section-b {
+  background: #333;
+  color: #fff;
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 28%;
+}
+
+.content h1 {
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 600%;
+  font-weight: 100;
+  color: #e1efe9;
+  line-height: 70%;
+}
+
+/*@media(max-width:960px) {
+  .container {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}*/
+
+/*--- Media Queries --*/
+
+@media screen and (max-width: 900px) {
+  .container {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+  .content {
+    padding-bottom: 30%;
+  }
+  .content h1 {
+    font-size: 450%;
+  }
+  .btn {
+    font-size: 130%;
+    padding: 9px 17px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding-bottom: 40%;
+  }
+  .content h1 {
+    font-size: 300%;
+  }
+  .btn {
+    font-size: 110%;
+    padding: 7px 15px;
+  }
+  p {
+    font-size: 120%;
+    line-height: 100%;
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    padding-bottom: 50%;
+  }
+  .content h1 {
+    font-size: 250%;
+  }
+  .btn {
+    font-size: 100%;
+    padding: 6px 14px;
+  }
+  p {
+    font-size: 100%;
+    line-height: 100%;
+    padding: 25px;
+  }
+}

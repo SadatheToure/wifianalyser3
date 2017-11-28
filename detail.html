@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <title>Wifianalyser Detail</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Dosis|Gloria+Hallelujah|Indie+Flower|Josefin+Sans|Pacifico" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/detail.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+          <a class="navbar-brand" href="index.html">Wifi Analyser</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Our Team</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid bg-2 text-center cardInfo">
+      <h3 class="">Team members</h3>
+      <div class="row">
+        <!-- Cole Card -->
+        <div class="col-sm-6 cardInfo">
+          <div class="crd">
+            <img src="./img/Cole.png" class="img-circle" alt="Cole" width="350" height="350">
+            <div class="contact-info col-xs-12">
+              <h2 class="cardName">Cole Stasney</h2>
+              <p class="cardTitle">Full Stack Web Developer</p>
+              <h4 class="">Galvanize Web Development Immersive Graduate</h4>
+              <div class="mediaDiv">
+                <a href="https://colestasney.com/"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/cole-stasney/"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Sadathe Card -->
+        <div class="col-sm-6 cardInfo">
+          <div class="crd">
+            <img src="./img/SadathePhoto.png" class="img-circle" alt="Sadathe" width="350" height="350">
+            <div class="contact-info col-xs-12">
+              <h2 class="cardName">Sadathe Toure</h2>
+              <p class="cardTitle">Full Stack Web Developer</p>
+              <h4>Galvanize Web Development Immersive Graduate</h4>
+              <div class="mediaDiv">
+                <a href="https://www.sadathetoure.com"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/sadathetoure/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/rufaigroup/"><i class="fa fa-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="container-fluid bg-1 text-center">
+      <div class="row">
+        <div class="col-sm-8">
+          <h4>
+            The Wifi Analyzer is a device made by Cole Stasney and Sadathe Toure for a week long Q3 project during the Galvanize Web Development Immersive program in 2017. This device allows you to inspect, analyze and return in depth information about your home or corporate Wi-Fi network to determine the power, privacy setting, authentication and channel of your network.
+          </h4>
+          <br>
+          <h4>
+            The equipment required for this project was a Raspberry Pi, a touch screen and a network card capable of entering monitor mode. The application is decoupled and consists of several different and somewhat complex parts.  To gain the Wi-Fi information, a Node.js server was installed on a Raspberry Pi with Express. The “Wi-Fi Detection Node,” or Pi, is placed in any given location and instructed to start a scan on a button press. The scan is conducted with the aircrack-ng suite of tools coupled with a capable Wi-Fi card. When the scan is complete, the acquired data is sorted and sent to an API that utilizes an SQL database. A separate front end utilizing JavaScript, D3 and DC charts is then able to access the API and display the data in a visually intuitive way.
+          </h4>
+          <br>
+          <h4>
+            The front end and API of this tool are available and free for use in your own project or as a raw example of how to utilize and display the Wi-Fi data once you acquire it. The Node.js server code on the Pi is not publicly available as the tools used to conduct the scan must be used very carefully as to avoid violating any local and/or federal laws. If you are interested in how we made the Wi-Fi Detection Node on the Pi, spend time reading on the aircrack-ng suite of tools and more specifically the use of airmon-ng to scan networks. It is also recommended you research the proper way to use these tools as to avoid any legal problems.
+          </h4>
+          <br>
+          <h4>
+            For more information about this project, please check out the README on our repo below.
+          </h4>
+          <br>
+          <a href="https://github.com/SadatheToure/Q3-project"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a>
+        </div>
+        <!-- 2nd side Section 2 -->
+        <div class="col-sm-4">
+          <h4><strong>Project pictures</strong></h4>
+          <h4>A touchscreen, Raspberry Pi & Network card reader.</h4>
+          <img src="./img/pi2.jpg" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+  <footer>
+    Designed with &hearts; from Denver, CO by .<a href="https://colestasney.com/"> Cole Stasney</a> & <a href="https://www.sadathetoure.com">Sadathe Toure</a>
+  </footer>
+
+</html>
