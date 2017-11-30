@@ -11,7 +11,7 @@ html, body {
   height: 100%;
   width: 100%;
   margin: auto;
-  background: url(../img/imgix-391808.jpg) no-repeat 50% 50%;
+  background: url(../img/thomas-kvistholt-191153.jpg) no-repeat 50% 50%;
   display: table;
   top: 0;
   background-size: cover;
@@ -32,8 +32,8 @@ html, body {
 }
 
 .content h1 {
-  font-family: 'Yantramanav', sans-serif;
-  font-size: 600%;
+  font-family: 'Lobster', cursive;
+  font-size: 700%;
   font-weight: 100;
   color: #e1efe9;
   line-height: 70%;
