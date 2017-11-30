@@ -43,18 +43,18 @@ html, body {
   font-family: 'Montserrat', sans-serif;
   font-size: 135%;
   font-weight: 600;
-  color: #3a6168;
+  color: rgba(231, 76, 60, 1.0);
   text-transform: uppercase;
   text-decoration: none;
-  border: solid #3a6168;
+  border: solid rgba(231, 76, 60, 1.0);
   padding: 10px 20px;
   border-radius: 9px;
   transition: all 0.5s;
 }
 
 .btn:hover {
-  color: #CBDFD6;
-  border: solid #CBDFD6 2px;
+  color: rgba(241, 196, 15, 1.0);
+  border: solid rgba(241, 196, 15, 1.0) 2px;
 }
 
 p {
